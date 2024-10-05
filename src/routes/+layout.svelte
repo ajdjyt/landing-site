@@ -55,8 +55,13 @@
 	<div class="bg-white fixed top-0 left-0 w-full flex flex-col z-20 px-4 fadeIn">
 		<Header />
 	</div>
+	<div style="margin-top:60px;">
+		<slot />
+	</div>
+{:else}
+	<slot />
 {/if}
 
-<slot />
+
 <Footer />
 <svelte:window bind:scrollY={y} bind:outerHeight />
