@@ -53,12 +53,6 @@
 				</div>
 			{/each}
 		</div>
-		<!-- <div class="flex flex-col gap-4">
-			<p class="font-bold poppins text-base sm:text-lg">Research</p>
-			<a href="" target="_blank" class="cursor-pointer hover:text-indigo-400 duration-200">
-				Read the science
-			</a>
-		</div> -->
 		<div class="flex flex-col gap-4">
 			<p class="font-bold text-base sm:text-lg">Follow Us</p>
 			<a
@@ -67,8 +61,8 @@
 				class="cursor-pointer hover:text-indigo-400 duration-200"
 			>
 				<i class="fa-brands fa-instagram pr-2" />
-				Instagram</a
-			>
+				Instagram
+			</a>
 			<a
 				href={socials.YT}
 				target="_blank"

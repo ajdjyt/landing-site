@@ -60,9 +60,3 @@
 <slot />
 <Footer />
 <svelte:window bind:scrollY={y} bind:outerHeight />
-<!--
-  header
-  footer
-  about us
-  product
-  -->
