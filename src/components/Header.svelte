@@ -16,6 +16,7 @@
 			<i class="fa-solid fa-bars"></i>
 		</button>
 		<nav class="hidden md:flex items-center gap-4 lg:gap-6">
+			<a class="duration-200 hover:text-indigo-400 cursor-pointer" href="#aboutus">About Us</a>
 			<a class="duration-200 hover:text-indigo-400 cursor-pointer" href="#faqs">FAQs</a>
 			<!-- <a class="duration-200 hover:text-indigo-400 cursor-pointer" href="#aboutus">About Us</a> -->
 			<a href="#product">

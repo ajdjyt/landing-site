@@ -8,14 +8,14 @@
 
 	let contacts = [
 		{
-			phone: '+91 9998887776',
-			name: 'John Doe',
-			email: 'email@mentoraglobal.com'
+			phone: '+91 9889009003',
+			name: 'Francisco Fernandes',
+			email: 'mentoraglobaltf@gmail.com'
 		},
 		{
-			phone: '+91 9998887776',
-			name: 'John Doe',
-			email: 'email@mentoraglobal.com'
+			phone: '+91 9887005371',
+			name: 'Tamim Nagdiwala',
+			email: 'mentoraglobaltf@gmail.com'
 		}
 	];
 </script>
@@ -35,6 +35,7 @@
 			class="flex flex-col md:justify-normal md:items-start items-start justify-center gap-4"
 		>
 			<p class="font-bold text-base sm:text-lg">Contact Us</p>
+			<p>Bangalore South</p>
 			{#each contacts as contact}
 				<div class="flex flex-col">
 					<div>
