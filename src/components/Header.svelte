@@ -1,5 +1,7 @@
 <script>
 	let sitename = 'MentoraGlobal';
+
+	import { openModal } from '../store';
 </script>
 
 <header class="flex flex-col relative z-20">
@@ -10,7 +12,7 @@
 				<img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.jpeg" alt="" />
 			</div>
 		</a>
-		<button class="md:hidden grid place-items-center">
+		<button class="md:hidden grid place-items-center" on:click={() => ($openModal = true)}>
 			<i class="fa-solid fa-bars"></i>
 		</button>
 		<nav class="hidden md:flex items-center gap-4 lg:gap-6">

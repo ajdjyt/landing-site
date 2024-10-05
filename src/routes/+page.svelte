@@ -22,5 +22,4 @@
 	<Product />
 	<FAQs />
 	<Conversation />
-	<Footer />
 </main>

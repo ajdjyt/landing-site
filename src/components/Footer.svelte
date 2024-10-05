@@ -22,9 +22,9 @@
 
 <footer>
 	<div
-		class="flex-col md:flex-row items-center justify-center mx-auto w-full flex md:justify-between py-10 px-5 sm:grid-cols-2 text-base gap-4"
+		class="flex-col md:flex-row items-start justify-start mx-auto w-full flex md:justify-between md:py-10 md:px-5 py-16 px-10 sm:grid-cols-2 text-base gap-4"
 	>
-		<div class="flex flex-col items-center md:items-start md:col-span-2">
+		<div class="flex flex-col items-start md:items-start md:col-span-2">
 			<h1 class="font-semibold align-middle">
 				<img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.jpeg" alt="" />
 			</h1>
@@ -32,7 +32,7 @@
 		</div>
 		<div
 			id="contact"
-			class="flex flex-col md:justify-normal md:items-start items-center justify-center gap-4"
+			class="flex flex-col md:justify-normal md:items-start items-start justify-center gap-4"
 		>
 			<p class="font-bold text-base sm:text-lg">Contact Us</p>
 			{#each contacts as contact}
