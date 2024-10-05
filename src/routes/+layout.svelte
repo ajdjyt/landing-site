@@ -1,6 +1,6 @@
-<script>
+<script lang=ts>
 	import '../app.css';
-	let y;
+	let y:any;
 	$: outerHeight = 0;
 
 	import { openModal } from '../store';
@@ -8,7 +8,7 @@
 	import Header from '../components/Header.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	function reroute(href) {
+	function reroute(href:any) {
 		$openModal = false;
 		window.location.href = href;
 	}
