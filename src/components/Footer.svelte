@@ -1,9 +1,9 @@
 <script>
 	let socials = {
-		X: 'https://x.com',
-		YT: 'https://youtube.com',
-		Instagram: 'https://instagram.com/',
-		Facebook: 'https://Facebook.com/'
+		X: 'https://x.com/mentora_global',
+		YT: 'https://www.youtube.com/@MentoraGlobal',
+		Instagram: 'https://www.instagram.com/mentoraglobaldotcom/',
+		Facebook: 'https://www.facebook.com/profile.php?id=61567002924803'
 	};
 
 	let contacts = [
