@@ -24,20 +24,9 @@
 			description: '2.Lorem ipsum, dolor sit amet consectetur adipisicing.',
 			imgUrl: '',
 			externalLink: 'https://mentoraglobal.edumilestones.com/abroad-studies/index-new.php?new=yes'
-		},
-		{
-			featureName: 'CRM',
-			featureList: [
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.',
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.',
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.'
-			],
-			description: '3.Lorem ipsum, dolor sit amet consectetur adipisicing.',
-			imgUrl: '',
-			externalLink: 'https://mentoraglobal.edumilestones.com/cm/'
 		}
 	];
-	// ["CCA", "CCCIS", "CRM"]
+	// ["CCA", "CCCIS"]
 </script>
 
 <SectionWrapper id="product">

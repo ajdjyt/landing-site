@@ -6,10 +6,6 @@
 			ans: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.'
 		},
 		{
-			question: 'How do I CRM?',
-			ans: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.'
-		},
-		{
 			question: 'Is CCCIS?',
 			ans: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.'
 		}
