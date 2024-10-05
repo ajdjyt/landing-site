@@ -29,7 +29,7 @@
 		<div class="flex items-center">
 			<a href={productFeature.externalLink}>
 				<button class="specialBtnDark mr-auto font-semibold">
-					<p>Get started now &rarr;</p>
+					<p>Get started now</p>
 				</button>
 			</a>
 		</div>
