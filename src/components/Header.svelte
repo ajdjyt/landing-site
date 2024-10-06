@@ -4,7 +4,7 @@
 	import { openModal } from '../store';
 </script>
 
-<header class="flex flex-col relative z-20 w-screen">
+<header class="flex flex-col fixed sticky top-0 left-0 z-99  w-screen bg-white">
 	<div class="mx-auto w-full flex item-center justify-between px-4 py-6">
 		<a href="/">
 			<!-- <h1 class="font-semibold">{sitename}</h1> -->

@@ -8,7 +8,6 @@
 </script>
 
 <main class="flex flex-col">
-	<Header />
 	<Hero />
 	<AboutUs />
 	<Product />
