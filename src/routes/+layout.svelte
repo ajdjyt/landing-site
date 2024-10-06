@@ -14,6 +14,8 @@
 	}
 </script>
 
+<svelte:window bind:scrollY={y} bind:outerHeight />
+
 {#if $openModal}
 	<div
 		class=" bg-white fixed top-0 left-0 w-screen h-screen border-b z-50 flex flex-col gap-8 p-5 px-8 md:hidden"
@@ -57,20 +59,5 @@
 	</div>
 {/if}
 
-<!-- {#if y > outerHeight}
-	<div class="bg-white fixed sticky top-0 left-0 w-full flex flex-col z-20 px-4 fadeIn">
-		<Header />
-	</div>
-{/if} -->
-
-<!-- {#if y > outerHeight}
-	<div>
-		<Header />
-	</div>
-{/if} -->
-<Header />
-
-
 <slot />
 <Footer />
-<svelte:window bind:scrollY={y} bind:outerHeight />
