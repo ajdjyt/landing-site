@@ -59,5 +59,7 @@
 	</div>
 {/if}
 
+
+<Header />
 <slot />
 <Footer />
