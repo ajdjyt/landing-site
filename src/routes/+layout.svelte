@@ -39,6 +39,12 @@
 				<p class="duration-200 group-hover:pl-2">FAQs</p>
 			</button>
 			<button
+				on:click={() => reroute('#aboutus')}
+				class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
+			>
+				<p class="duration-200 group-hover:pl-2">About Us</p>
+			</button>
+			<button
 				on:click={() => reroute('#contact')}
 				class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
 			>
@@ -56,6 +62,7 @@
 		<Header />
 	</div>
 {/if}
-<slot/>
+
+<slot />
 <Footer />
 <svelte:window bind:scrollY={y} bind:outerHeight />

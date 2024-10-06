@@ -4,8 +4,8 @@
 	import { openModal } from '../store';
 </script>
 
-<header class="flex flex-col relative z-20">
-	<div class="max-w-[1400em] mx-auto w-full flex item-center justify-between px-4 py-6">
+<header class="flex flex-col relative z-20 w-screen">
+	<div class="mx-auto w-full flex item-center justify-between px-4 py-6">
 		<a href="/">
 			<!-- <h1 class="font-semibold">{sitename}</h1> -->
 			<div class="flex flex-col bg-white gap-4 flex-1">
