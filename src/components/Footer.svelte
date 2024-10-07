@@ -54,6 +54,16 @@
 			{/each}
 		</div>
 		<div class="flex flex-col gap-4">
+            <p class="font-bold poppins text-base sm:text-lg">Submit a Query</p>
+            <a
+                href=""
+                target="_blank"
+                class="cursor-pointer hover:text-indigo-400 duration-200"
+            >
+                	
+			</a>
+        </div>
+		<div class="flex flex-col gap-4">
 			<p class="font-bold text-base sm:text-lg">Follow Us</p>
 			<a
 				href={socials.Instagram}
