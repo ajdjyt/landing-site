@@ -24,7 +24,7 @@
 				Frequently Asked Questions
 			</h3>
 		</div>
-		<div class="flex flex-col gap-8 sm:gap-10 md:gap-14 w-full border place-items-center">
+		<div class="flex flex-col gap-8 sm:gap-10 md:gap-14 w-full place-items-center">
 			{#each faqs as faq}
 				<div class="flex flex-col gap-2 text-left w-full mx-auto relative p-4 px-6">
 					<div class="absolute top-0 left-0 w-1/3 h-[1px] bg-slate-950 -translate-x-4"></div>

@@ -39,6 +39,7 @@
 	"type": "module",
 	"dependencies": {
 		"nodemailer": "^6.9.15",
-		"nodemailer-mailgun-transport": "^2.1.5"
+		"nodemailer-mailgun-transport": "^2.1.5",
+		"svelte-inview": "^4.0.4"
 	}
 }
