@@ -25,7 +25,12 @@ export const POST = async ({ request }: { request: Request }) => {
 	const userMessage = data.get('userMessage') as string;
 
 	if (!userEmail || !userName || !userMessage) {
-		return fail(400, { error: 'Missing required form fields' });
+		return new Response(JSON.stringify({ error: 'Missing required form fields' }), {
+			status: 400,
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
 	}
 
 	const mail = `mailer@${domain}`;
@@ -49,6 +54,9 @@ export const POST = async ({ request }: { request: Request }) => {
 		} else {
 			console.log(`Error sending email: ${error}`);
 		}
-		return fail(500, { error: 'Failed to send email' });
+		return new Response(JSON.stringify({ error: 'Failed to send email' }), {
+			status: 500,
+			headers: { 'Content-Type': 'application/json' }
+		});
 	}
 };
