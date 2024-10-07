@@ -1,4 +1,5 @@
 <script>
+	import MailUs from './MailUs.svelte';
 	let socials = {
 		X: 'https://x.com/mentora_global',
 		YT: 'https://www.youtube.com/@MentoraGlobal',
@@ -18,6 +19,8 @@
 			email: 'mentoraglobaltf@gmail.com'
 		}
 	];
+	export let success = false;
+	export let error = '';
 </script>
 
 <footer>
@@ -54,15 +57,9 @@
 			{/each}
 		</div>
 		<div class="flex flex-col gap-4">
-            <p class="font-bold poppins text-base sm:text-lg">Submit a Query</p>
-            <a
-                href=""
-                target="_blank"
-                class="cursor-pointer hover:text-indigo-400 duration-200"
-            >
-                	
-			</a>
-        </div>
+			<p class="font-bold text-base sm:text-lg">Submit a Query</p>
+			<MailUs />
+		</div>
 		<div class="flex flex-col gap-4">
 			<p class="font-bold text-base sm:text-lg">Follow Us</p>
 			<a

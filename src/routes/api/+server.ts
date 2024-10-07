@@ -2,35 +2,53 @@ import nodemailer from 'nodemailer';
 import mg from 'nodemailer-mailgun-transport';
 import { fail } from '@sveltejs/kit';
 
-const auth:any = {
-  auth: {
-    api_key: process.env.mailgun_key,
-    domain: process.env.mailgun_mail_domain
-  }
+const apiKey = process.env.mailgun_key;
+const domain = process.env.mailgun_mail_domain;
+
+if (!apiKey || !domain) {
+	throw new Error('Mailgun API key or domain is not set in environment variables');
+}
+const auth = {
+	auth: {
+		api_key: apiKey,
+		domain: domain
+	}
 };
 
 const nodemailerMailgun = nodemailer.createTransport(mg(auth));
 
-export const actions = {
-  default: async ({ request }) => {
-    const data = await request.formData();
-    const query = data.get('query');
+export const POST = async ({ request }: { request: Request }) => {
+	const data = await request.formData();
 
-    const mail = `mailer@${process.env.mailgun_mail_domain}`;
-    const recipient = process.env.mailgun_mail_recipient;
+	const userEmail = data.get('userEmail') as string;
+	const userName = data.get('userName') as string;
+	const userMessage = data.get('userMessage') as string;
 
-    try {
-      const info = await nodemailerMailgun.sendMail({
-        from: mail,
-        to: recipient,
-        subject: 'Received Query',
-        text: query
-      });
-      
-      return { success: true, message: `Email sent: ${info.messageId}` };
-    } catch (error) {
-      console.error(`Error sending email: ${error}`);
-      return fail(500, { error: 'Failed to send email' });
-    }
-  }
+	if (!userEmail || !userName || !userMessage) {
+		return fail(400, { error: 'Missing required form fields' });
+	}
+
+	const mail = `mailer@${domain}`;
+	const recipient = process.env.mailgun_mail_recipient;
+
+	try {
+		const info = await nodemailerMailgun.sendMail({
+			from: mail,
+			to: recipient,
+			subject: `Received Query from ${userName}`,
+			text: `Query from ${userName} \n Mail: ${userEmail} \n\n ${userMessage}`
+		});
+
+		return new Response(
+			JSON.stringify({ success: true, message: `Email sent: ${info.messageId}` }),
+			{ status: 200 }
+		);
+	} catch (error) {
+		if (error instanceof Error) {
+			console.log(`Error sending email: ${error.message || error}`, error.stack);
+		} else {
+			console.log(`Error sending email: ${error}`);
+		}
+		return fail(500, { error: 'Failed to send email' });
+	}
 };
