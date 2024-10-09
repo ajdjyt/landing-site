@@ -8,7 +8,7 @@
 		class={'flex flex-col gap-14 md:gap-14 lg:gap-20 relative text-base'}
 	>
 		<h4
-			class="text-center text-2xl sm:text-3xl md:text-4xl max-w-[1000px] w-full font-medium relative pr-10 after:absolute after:top-full after:left-1/2 after:w-1/5 after:h-1.5 after:mt-1 after:bg-slate-900"
+			class="text-2xl sm:text-3xl md:text-4xl max-w-[1000px] w-full font-medium relative pr-10 after:absolute after:top-full after:left-0 after:w-1/5 after:h-1.5 after:mt-1 after:bg-slate-900"
 		>
 			<slot />
 		</h4>
@@ -25,7 +25,7 @@
 				</div>
 			{/each}
 		</div>
-		<div class="flex items-center">
+		<div class="flex flex-col items-center ">
 			<a href={productFeature.externalLink}>
 				<button class="specialBtnDark mr-auto font-semibold">
 					<p>Get started now</p>
