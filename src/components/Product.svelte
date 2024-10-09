@@ -41,7 +41,7 @@
 				Our Services
 			</h3>
 		</div>
-		<div class="flex flex-row">
+		<div class="flex flex-row gap-x-12">
 			{#each productFeatures as productFeature, index}
 				<ProductCard {productFeature} {index}>
 					{productFeature.featureName}

@@ -60,7 +60,7 @@
 			<p class="font-bold text-base sm:text-lg">Submit a Query</p>
 			<MailUs />
 		</div> -->
-		<div class="flex flex-col gap-4">
+		<div class="flex flex-col gap-4 mr-24">
 			<p class="font-bold text-base sm:text-lg">Follow Us</p>
 			<a
 				href={socials.Instagram}
