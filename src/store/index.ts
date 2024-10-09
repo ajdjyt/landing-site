@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export const openModal = writable();
+export const openModal = writable(false);
