@@ -56,10 +56,10 @@
 				</div>
 			{/each}
 		</div>
-		<div class="flex flex-col gap-4">
+		<!-- <div class="flex flex-col gap-4">
 			<p class="font-bold text-base sm:text-lg">Submit a Query</p>
 			<MailUs />
-		</div>
+		</div> -->
 		<div class="flex flex-col gap-4">
 			<p class="font-bold text-base sm:text-lg">Follow Us</p>
 			<a

@@ -41,10 +41,12 @@
 				Our Services
 			</h3>
 		</div>
-		{#each productFeatures as productFeature, index}
-			<ProductCard {productFeature} {index}>
-				{productFeature.featureName}
-			</ProductCard>
-		{/each}
+		<div class="flex flex-row">
+			{#each productFeatures as productFeature, index}
+				<ProductCard {productFeature} {index}>
+					{productFeature.featureName}
+				</ProductCard>
+			{/each}
+		</div>
 	</div>
 </SectionWrapper>

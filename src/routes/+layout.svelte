@@ -12,6 +12,14 @@
 		$openModal = false;
 		window.location.href = href;
 	}
+
+	function toggleModal(openModal:Boolean){
+		if (openModal==true){
+			$openModal = false;
+		} else {
+			$openModal = true;
+		}
+	}
 </script>
 
 <svelte:window bind:scrollY={y} bind:outerHeight />
@@ -22,7 +30,7 @@
 	>
 		<div class="flex items-center justify-between gap-4 border-b pb-2">
 			<img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.jpeg" alt="" />
-			<button on:click={() => ($openModal = false)} class="outline-none border-none">
+			<button on:click={() => (toggleModal($openModal))} class="outline-none border-none">
 				<i class="fa-solid fa-xmark text-2xl"> </i></button
 			>
 		</div>
@@ -35,10 +43,10 @@
 				<p class="duration-200 group-hover:pl-2">Get started</p>
 			</button>
 			<button
-				on:click={() => reroute('#faqs')}
+				on:click={() => reroute('#query')}
 				class="border-none outline-none p-2 group duration-200 cursor-pointer text-left"
 			>
-				<p class="duration-200 group-hover:pl-2">FAQs</p>
+				<p class="duration-200 group-hover:pl-2">Queries</p>
 			</button>
 			<button
 				on:click={() => reroute('#aboutus')}
