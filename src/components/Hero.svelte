@@ -4,10 +4,10 @@
 </script>
 
 <SectionWrapper id={'hero'}>
-	<div class="flex flex-row">
-		<div class="min-h-screen flex flex-col gap-10 flex-1 items-center justify-center pb-10 md:pb-14">
+	<div class="flex flex-col md:flex-row min-h-screen ">
+		<div class="h-[60vh] flex flex-col md:gap-10 space-y-3 md:flex-1 items-center justify-center md:pb-14">
 			<h2
-				class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl max-w-[1200px] mx-auto w-full text-center font-semibold"
+				class="text-5xl md:text-7xl max-w-[50rem] mx-auto w-full text-center font-semibold"
 			>
 				Welcome to <span class="text-indigo-400">Mentora Global</span>.
 			</h2>
@@ -17,7 +17,7 @@
 			<CTAs dark="" />
 			<div class="flex items-center justify-center gap-2 text-base"></div>
 		</div>
-		<div class="min-h-screen min-w-1/2 flex-1 items-center justify-center pb-10 md:pb-14 hidden md:flex md:flex-col ">
+		<div class="md:min-w-1/2 flex-1 items-center justify-center pb-10 md:pb-14 flex flex-col ">
 			<img class="w-full h-full" src="assets/hero-md.jpg" alt="Please use a supported browser">
 		</div>
 	</div>
