@@ -38,7 +38,7 @@
 		<p class="text-4xl sm:text-5xl md:text-6xl w-full my-0 font-semibold text-center pt-24">
 			Submit a Query
 		</p>
-		<form class="w-full md:w-1/3" method="post" on:submit={handleSubmit}>
+		<form class="flex flex-col w-full md:w-1/2 md:w-[35rem] items-center" method="post" on:submit={handleSubmit}>
 			<div class="relative z-0 w-full mb-5 group my-4">
 				<input
 					type="email"
@@ -54,7 +54,7 @@
 					>Your Email</label
 				>
 			</div>
-			<div class=" relative z-0 w-full mb-5 group my-4">
+			<div class="relative z-0 w-full mb-5 group my-4 items-center">
 				<input
 					type="name"
 					name="userName"
@@ -75,17 +75,16 @@
 					class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900"
 					>Your message</label
 				>
-				<input
-					type="text"
+				<textarea
 					name="userMessage"
 					id="userMessage"
 					required
-					class="block w-full p-4 text-slate-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-blue-600 dark:placeholder-gray-400 dark:text-slate-900 dark:focus:ring-blue-500 dark:focus:border-blue-500 text-xs min-h-[8rem]"
+					class="block w-full p-4 justify-start text-wrap align-text-top text-slate-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 text-xs min-h-[8rem]"
 				/>
 			</div>
 			<button
 				type="submit"
-				class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+				class="text-white md:w-[20rem] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
 				>Submit</button
 			>
 		</form>
