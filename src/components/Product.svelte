@@ -4,13 +4,13 @@
 
 	let productFeatures = [
 		{
-			featureName: 'Career Analysis',
+			featureName: 'Career Analysis and Guidance',
 			featureList: [
-				'Career Analysis for 2nd to 7th class',
-				'Career Analysis for 8th, 9th & 10th Class',
-				'Career Analysis for 11th & 12th Class',
-				'Career Analysis for Graduates',
-				'Career Analysis for Professionals'
+				'Career Analysis and Guidance for 2nd to 7th class',
+				'Career Analysis and Guidance for 8th, 9th & 10th Class',
+				'Career Analysis and Guidance for 11th & 12th Class',
+				'Career Analysis and Guidance for Graduates',
+				'Career Analysis and Guidance for Professionals'
 			],
 			description: 'Comprehensive Career Counselling by Experts',
 			imgUrl: '',

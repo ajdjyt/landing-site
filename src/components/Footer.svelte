@@ -11,12 +11,12 @@
 		{
 			phone: '+91 9889009003',
 			name: 'Francisco Fernandes',
-			email: 'mentoraglobaltf@gmail.com'
+			email: 'francisco@mentoraglobal.com'
 		},
 		{
 			phone: '+91 9887005371',
 			name: 'Tamim Nagdiwala',
-			email: 'mentoraglobaltf@gmail.com'
+			email: 'tamim@mentoraglobal.com'
 		}
 	];
 	export let success = false;
