@@ -13,7 +13,7 @@
 				'Career Analysis and Guidance for Professionals'
 			],
 			description: 'Comprehensive Career Counselling by Experts',
-			imgUrl: '',
+			imgUrl: 'assets/cca.jpg',
 			externalLink: 'https://mentoraglobal.edumilestones.com/'
 		},
 		{
@@ -27,7 +27,7 @@
 				'Dedicated Counselor'
 			],
 			description: 'Your End-to-End Overseas Education Solution',
-			imgUrl: '',
+			imgUrl: 'assets/cccis.jpg',
 			externalLink: 'https://mentoraglobal.edumilestones.com/abroad-studies/index-new.php?new=yes'
 		}
 	];
@@ -37,9 +37,9 @@
 <SectionWrapper id="product">
 	<div class="flex flex-col gap-10 sm:gap-14 md:gap-24 flex-1 justify-center pb-10 md:pb-14">
 		<div class="flex flex-col gap-2">
-			<p class="opacity-60 text-base sm:text-lg md:text-xl text-center">
+			<!-- <p class="opacity-60 text-base sm:text-lg md:text-xl text-center">
 				Start getting counselling <span class="text-indigo-400">today.</span>
-			</p>
+			</p> -->
 			<h3
 				class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center"
 			>
