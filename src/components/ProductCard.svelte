@@ -3,7 +3,7 @@
 	export let productFeature;
 </script>
 
-<div class="flex flex-cols gap-14 md:gap-14 lg:gap-20 text-base place-items-center">
+<div class="flex md:flex-row flex-col gap-14 md:gap-14 lg:gap-20 text-base place-items-center">
 	<div
 		class={'w-full md:w-screen/2 flex flex-col gap-7 md:gap-7 lg:gap-10 relative text-base '}
 	>
@@ -35,7 +35,7 @@
 	</div>
 
 	<div
-		class={'hidden md:flex flex-col overflow-hidden dropShadow rounded-b-lg' +
+		class={'flex flex-col overflow-hidden dropShadow rounded-b-lg' +
 			(index % 2 === 1 ? ' md:order-2' : ' ')}
 	>
 		<!-- <div class="rounded-t-xl h-8 sm:h-10 bg-white opacity-60 px-3 flex items-center gap-2">
@@ -43,7 +43,7 @@
 				<div class="rounded-full aspect-square w-2.5 sm:w-3 bg-indigo-300" />
 			{/each}
 		</div> -->
-		<div class="m-16">
+		<div class="md:m-16 w-screen">
 			<img src={productFeature.imgUrl} alt="Please use a supported browser" />
 		</div>
 	</div>
