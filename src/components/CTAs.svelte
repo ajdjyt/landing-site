@@ -12,14 +12,16 @@
 <div class="flex items-center gap-4">
 	<button class={'specialBtn' + (dark ? ' bg-[#181b34]' : ' ')}>
 		<a href="#contact">
-			<p class="text-base sm:text-lg md:text-xl" on:click={() => reroute('#contact')}>Contact Us</p>
+			<button class="border-none p-0 bg-none text-base sm:text-lg md:text-xl" on:click={() => reroute('#contact')}>
+				Contact Us
+			</button>
 		</a>
 	</button>
 	<button class={'specialBtnDark'}>
 		<a href="#product">
-			<p class="text-base sm:text-lg md:text-xl" on:click={() => reroute('#product')}>
+			<button class="border-none p-0 bg-none text-base sm:text-lg md:text-xl" on:click={() => reroute('#product')}>
 				Get Started
-			</p>
+			</button>
 		</a>
 	</button>
 </div>
