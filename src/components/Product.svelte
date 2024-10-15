@@ -4,24 +4,29 @@
 
 	let productFeatures = [
 		{
-			featureName: 'CCA',
+			featureName: 'Career Analysis',
 			featureList: [
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.',
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.',
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.'
+				'Career Analysis for 2nd to 7th class',
+				'Career Analysis for 8th, 9th & 10th Class',
+				'Career Analysis for 11th & 12th Class',
+				'Career Analysis for Graduates',
+				'Career Analysis for Professionals'
 			],
-			description: '1.Lorem ipsum, dolor sit amet consectetur adipisicing.',
+			description: 'Comprehensive Career Counselling by Experts',
 			imgUrl: '',
 			externalLink: 'https://mentoraglobal.edumilestones.com/'
 		},
 		{
-			featureName: 'CCCIS',
+			featureName: 'Study Abroad Counselling',
 			featureList: [
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.',
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.',
-				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus doloremque similique nisi earum hic.'
+				'Universities Shortlisting',
+				'Application Submissions',
+				'IELTS Preparation',
+				'Visa Support',
+				'SOP Support',
+				'Dedicated Counselor'
 			],
-			description: '2.Lorem ipsum, dolor sit amet consectetur adipisicing.',
+			description: 'Your End-to-End Overseas Education Solution',
 			imgUrl: '',
 			externalLink: 'https://mentoraglobal.edumilestones.com/abroad-studies/index-new.php?new=yes'
 		}
@@ -41,7 +46,7 @@
 				Our Services
 			</h3>
 		</div>
-		<div class="flex flex-col gap-x-12">
+		<div class="flex flex-col flex-1 gap-y-12 w-full">
 			{#each productFeatures as productFeature, index}
 				<ProductCard {productFeature} {index}>
 					{productFeature.featureName}
