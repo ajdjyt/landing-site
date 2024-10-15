@@ -43,7 +43,7 @@
 				<div class="rounded-full aspect-square w-2.5 sm:w-3 bg-indigo-300" />
 			{/each}
 		</div> -->
-		<div class="md:m-16 w-screen">
+		<div class="md:m-12 w-screen md:w-auto ">
 			<img src={productFeature.imgUrl} alt="Please use a supported browser" />
 		</div>
 	</div>
