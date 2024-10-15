@@ -1,9 +1,9 @@
-<script>
+<script lang=ts>
 	export let dark;
 
 	import { openModal } from '../store';
 
-	function reroute(href) {
+	function reroute(href:string) {
 		$openModal = false;
 		window.location.href = href;
 	}
