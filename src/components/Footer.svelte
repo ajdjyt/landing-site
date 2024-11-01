@@ -69,7 +69,7 @@
 			<a
 				href={socials.Instagram}
 				target="_blank"
-				class="cursor-pointer hover:text-indigo-400 duration-200"
+				class="cursor-pointer hover:text-emColorAlt duration-200"
 			>
 				<i class="fa-brands fa-instagram pr-2" />
 				Instagram
@@ -77,7 +77,7 @@
 			<a
 				href={socials.YT}
 				target="_blank"
-				class="cursor-pointer hover:text-indigo-400 duration-200"
+				class="cursor-pointer hover:text-emColorAlt duration-200"
 			>
 				<i class="fa-brands fa-youtube pr-2" />
 				YouTube
@@ -85,12 +85,12 @@
 			<a
 				href={socials.Facebook}
 				target="_blank"
-				class="cursor-pointer hover:text-indigo-400 duration-200"
+				class="cursor-pointer hover:text-emColorAlt duration-200"
 			>
 				<i class="fa-brands fa-facebook pr-2" />
 				Facebook
 			</a>
-			<a href={socials.X} target="_blank" class="cursor-pointer hover:text-indigo-400 duration-200">
+			<a href={socials.X} target="_blank" class="cursor-pointer hover:text-emColorAlt duration-200">
 				<i class="fa-brands fa-twitter pr-2" />
 				X
 			</a>
