@@ -19,7 +19,7 @@
 		<a href="/">
 			<!-- <h1 class="font-semibold">{sitename}</h1> -->
 			<div class="flex flex-col bg-primo gap-4 flex-1">
-				<!-- <img class="md:max-w-[7rem] max-w-[5rem] " src={logo} alt={sitename} /> -->
+				<!-- <img class="md:max-w-[7rem] max-w-[5rem]" src='assets/logo.svg' alt={sitename} /> -->
 				<Icon/>
 			</div>
 		</a>

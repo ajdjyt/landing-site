@@ -23,6 +23,7 @@
 	];
 	export let success = false;
 	export let error = '';
+	import Icon from './Icon.svelte';
 </script>
 
 <footer>
@@ -31,7 +32,8 @@
 	>
 		<div class="flex flex-col items-start md:items-start md:col-span-2">
 			<h1 class="font-semibold align-middle">
-				<img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.svg" alt="" />
+				<Icon/>
+				<!-- <img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.png" alt="" /> -->
 			</h1>
 			<p class="text-xs md:text-xl">©2024 Mentora Global.</p>
 		</div>
