@@ -3,8 +3,8 @@
 	let socials = {
 		X: 'https://x.com/mentora_global',
 		YT: 'https://www.youtube.com/@MentoraGlobal',
-		Instagram: 'https://www.instagram.com/mentoraglobaldotcom/',
-		Facebook: 'https://www.facebook.com/profile.php?id=61567002924803'
+		Instagram: 'https://www.instagram.com/mentora.global/',
+		Facebook: 'https://www.facebook.com/people/Mentora-Global/61568068798570/'
 	};
 
 	let contacts = [
