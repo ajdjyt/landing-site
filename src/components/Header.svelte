@@ -11,14 +11,16 @@
 			$openModal = true;
 		}
 	}
+	import Icon from './Icon.svelte';
 </script>
 
 <header class="flex flex-col fixed top-0 left-0 z-50  w-screen bg-primo">
 	<div class="mx-auto w-full flex item-center justify-between px-4 py-6">
 		<a href="/">
 			<!-- <h1 class="font-semibold">{sitename}</h1> -->
-			<div class="flex flex-col bg-white gap-4 flex-1">
-				<img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.png" alt={sitename} />
+			<div class="flex flex-col bg-primo gap-4 flex-1">
+				<!-- <img class="md:max-w-[7rem] max-w-[5rem] " src={logo} alt={sitename} /> -->
+				<Icon/>
 			</div>
 		</a>
 		<button class="md:hidden grid place-items-center" on:click={() => (toggleModal($openModal))}>

@@ -9,7 +9,7 @@
 		<h2
 			class="text-5xl md:text-7xl max-w-[50rem] mx-auto w-full text-center font-semibold "
 		>
-			Welcome to <span class={`text-emColor font-emFont`}>Mentora Global</span>.
+			Welcome to <span class={`text-emColor font-emFont`}>Mentora Global</span>
 		</h2>
 		<p class="text-xl sm:text-2xl md:text-3xl text-center max-w-[1000px] mx-auto w-full">
 			Mentoring your path to success.
