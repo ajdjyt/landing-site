@@ -1,5 +1,5 @@
 <script lang=ts>
-
+	import * as store from '../store';
 	import { openModal } from '../store';
 
 	function reroute(href:string) {

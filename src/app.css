@@ -6,6 +6,7 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+
 html {
 	scroll-behavior: smooth;
 }
@@ -17,8 +18,9 @@ span {
 
 .bgGrid {
 	background-size: 40px 40px;
-	background-image: linear-gradient(to right, grey 1px, transparent 1px),
-		linear-gradient(to bottom, grey 1px, transparent 1px);
+	/* background-image: linear-gradient(to right, grey 1px, transparent 1px),
+		linear-gradient(to bottom, grey 1px, transparent 1px); */
+	background-color: #FFFECB;
 }
 
 button,
@@ -29,13 +31,13 @@ button,
 	font-size: 1em;
 	font-weight: 500;
 	font-family: inherit;
-	background-color: white;
+	@apply bg-primo;
 	cursor: pointer;
 	transition: border-color 0.2s;
 }
 
 button:hover {
-	border-color: #646cff;
+	@apply border-emColorAlt;
 }
 
 button:focus,
@@ -44,16 +46,16 @@ button:focus-visible {
 }
 
 .specialBtn {
-	border-color: #646cff;
+	@apply border-emColor;
 }
 
 .specialBtnDark {
-	background: #646cff;
-	color: white;
+	@apply bg-emColor;
+	@apply text-primo;
 }
 
 .specialBtn:hover {
-	border-color: blue;
+	@apply border-emColorAlt;
 }
 
 .dropShadow {

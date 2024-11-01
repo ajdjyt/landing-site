@@ -1,10 +1,12 @@
 <script>
 	import MailUs from './MailUs.svelte';
+	import * as store from '../store';
 	let socials = {
 		X: 'https://x.com/mentora_global',
 		YT: 'https://www.youtube.com/@MentoraGlobal',
 		Instagram: 'https://www.instagram.com/mentora.global/',
 		Facebook: 'https://www.facebook.com/people/Mentora-Global/61568068798570/'
+	
 	};
 
 	let contacts = [
@@ -25,7 +27,7 @@
 
 <footer>
 	<div
-		class="flex-col md:flex-row items-start justify-start mx-auto w-full flex md:justify-between md:py-10 md:px-5 py-16 px-10 sm:grid-cols-2 text-base gap-4"
+		class="bg-primo flex-col md:flex-row items-start justify-start mx-auto w-full flex md:justify-between md:py-10 md:px-5 py-16 px-10 sm:grid-cols-2 text-base gap-4"
 	>
 		<div class="flex flex-col items-start md:items-start md:col-span-2">
 			<h1 class="font-semibold align-middle">

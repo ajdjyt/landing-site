@@ -7,7 +7,7 @@
 	import AboutUs from '../components/AboutUs.svelte';
 </script>
 
-<main class="flex flex-col">
+<main class="bg-primo flex flex-col">
 	<Hero />
 	<AboutUs />
 	<Product />

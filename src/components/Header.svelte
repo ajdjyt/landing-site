@@ -13,7 +13,7 @@
 	}
 </script>
 
-<header class="flex flex-col fixed top-0 left-0 z-50  w-screen bg-white">
+<header class="flex flex-col fixed top-0 left-0 z-50  w-screen bg-primo">
 	<div class="mx-auto w-full flex item-center justify-between px-4 py-6">
 		<a href="/">
 			<!-- <h1 class="font-semibold">{sitename}</h1> -->
