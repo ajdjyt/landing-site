@@ -7,10 +7,18 @@
 	import CTAs from '../components/CTAs.svelte';
 	import Header from '../components/Header.svelte';
 	import Footer from '../components/Footer.svelte';
+	import Icon from '../components/Icon.svelte';
 
 	function reroute(href:any) {
 		$openModal = false;
-		window.location.href = href;
+		// window.location.href = href;
+		// const section = document.querySelector(href);
+		// const offset = 64;
+		// const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - offset;
+		// window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+		document.querySelector(href).scrollIntoView({ 
+ 			behavior: 'smooth' 
+		});
 	}
 
 	function toggleModal(openModal:Boolean){
@@ -29,7 +37,8 @@
 		class=" bg-white fixed top-0 left-0 w-screen h-screen border-b z-50 flex flex-col gap-8 p-5 px-8 md:hidden"
 	>
 		<div class="flex items-center justify-between gap-4 border-b pb-2">
-			<img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.jpeg" alt="" />
+			<Icon/>
+			<!-- <img class="md:max-w-[7rem] max-w-[5rem]" src="assets/logo.jpeg" alt="" /> -->
 			<button on:click={() => (toggleModal($openModal))} class="outline-none border-none">
 				<i class="fa-solid fa-xmark text-2xl"> </i></button
 			>
