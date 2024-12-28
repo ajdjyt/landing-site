@@ -26,6 +26,7 @@
 			$openModal = false;
 		} else {
 			$openModal = true;
+			history.pushState({ modalOpen: true }, '');
 		}
 	}
 	function popModal(openModal:Boolean){
@@ -34,6 +35,13 @@
 			console.log("popped modal")
 		}
 	}
+
+	window.addEventListener('popstate', (event) => {
+		if ($openModal==true){
+			$openModal = false;
+			console.log("popped modal")
+		}
+	});
 </script>
 
 <svelte:window bind:scrollY={y} bind:outerHeight on:popstate={() => (popModal($openModal))} />
