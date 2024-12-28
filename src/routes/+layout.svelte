@@ -32,14 +32,14 @@
 	function popModal(openModal:Boolean){
 		if (openModal==true){
 			$openModal = false;
-			console.log("popped modal")
+			console.log("popped modal");
 		}
 	}
 
 	window.addEventListener('popstate', (event) => {
 		if ($openModal==true){
 			$openModal = false;
-			console.log("popped modal")
+			console.log("popped modal");
 		}
 	});
 </script>
